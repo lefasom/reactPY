@@ -1,0 +1,13 @@
+python -m venv venv - para generar entorno virtual
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass - Esto establecerá la política de ejecución en "Bypass" solo para la sesión actual de PowerShell, lo que te permitirá ejecutar scripts.
+
+.\venv\Scripts\activate - este te permite activar el entorno virtual
+
+pip install "reactpy[fastapi]"
+pip install fastapi uvicorn
+
+uvicorn main:app --reload - para ejecutar mi sitio web 
+
+
+pip install Flask - necesito crear una ruta por lo que usare flask
